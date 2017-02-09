@@ -1,1 +1,31 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HTML Space
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/jquery.min.js"></script>
+</head>
+<body>
+	<div id="content">
+		HTML Space
+
+		Basicamente o básico que você precisa saber de HTML é:
+		<!-- Inserir abaixo -->
+		<div class="tags">
+			
+		</div>
+	</div> 
+</body>
+<script type="text/javascript">
+	var tags = $(".tags");
+	
+
+	$.ajax({url: "tags.html"}).done(function(data) {
+		tags.html(data);
+		console.log(data);
+	});
+</script>
+</html>
+
